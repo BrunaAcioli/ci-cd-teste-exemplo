@@ -17,7 +17,7 @@ jobs:
       with:
         node-version: 20
         cache: 'npm'
-        
+
     - name: Instalar Dependencias 
       run: npm install
 
@@ -26,7 +26,7 @@ jobs:
       run: npm test
 
     - name: Gerar relatório Allure
-      run: npm run report:generate
+      run: npm run report
 
     - name: Publicar relatório no Gh Pages
       uses: peaceiris/actions-gh-pages@v4
